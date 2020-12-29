@@ -39,7 +39,7 @@
   border-top: 3px solid grey;
 }
 
-.menu {
+.header {
   display: flex;
   height:30px;
   justify-content: space-evenly;
