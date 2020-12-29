@@ -1,2 +1,2 @@
 # Project-2
-https://github.com/mcamarotte/Project-02.git
+ https://mcamarotte.github.io/Project-02/
