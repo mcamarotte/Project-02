@@ -4,7 +4,6 @@
   font-family: 'Raleway';
   text-decoration: none;
 }
-/* Stars */
 
 .bluestar {
 	color: #0065fc;
@@ -28,11 +27,12 @@
   display: flex;
   align-items: center;
   float: left;
-  width: 100px;
+  width: auto;
 }
 
 .logo img{
   height: 60px;
+  margin: 0px 40px;
 }
 
 .nav {
@@ -41,7 +41,7 @@
   font-size: 17px;
   gap: 10px;
   justify-content: flex-end;
-  width: 1450px;
+  width: 80%;
   height: 80px;
   color: #0065FC;
 }
@@ -54,14 +54,14 @@
   border-top: 3px solid #0065FC;
 }
 
- .nav-act{
+.nav-act {
   font-weight: 700;
   line-height: 5px;
   padding: 20px;
   color: grey;
- }
+}
 
- .nav-sig{
+.nav-sig {
   font-weight: 700;
   line-height: 5px;
   padding: 20px;
@@ -77,8 +77,9 @@
 
 /*Page name*/
 
-.top-section {
-  margin: 20px 140px;
+.topSection {
+  width: 85%;
+  margin: auto;
 }
 
 .fa-map-marker-alt {
@@ -94,7 +95,6 @@
 .search {
   display: flex;
   flex-direction: row;
-  margin: 20px 140px;
   width: auto;
   text-align: center;
 }
@@ -157,7 +157,6 @@
   display: flex;
   flex-direction: row;
   gap: 40px;
-  margin: 20px 140px;
   width: auto;
 }
 
@@ -167,7 +166,6 @@
 
 .info {
   font-weight: lighter;
-  margin: 20px 140px;
 }
 
 .info-i {
@@ -179,6 +177,7 @@
 }
 
 /* Accommodations in Marseille */
+
 .acco-box {
   background-color: white;
   border: solid white 10px;
@@ -194,7 +193,7 @@
 .acco-box img {
   border-radius: 20px 20px 0 0;
   height: 130px;
-  width: 280px;
+  width: 100%;
   object-fit: cover;
   position: relative;
 }
@@ -225,14 +224,14 @@
 .acco-background {
   background-color: #F2F2F2;
   border-radius: 25px;
-  height: 660px;
   padding: 10px;
-  width: 1040px;
+  width: 55%;
 }   
 
 .places {
   display: flex;
-  gap: 50px;
+  flex-wrap: wrap-reverse;
+  gap: 20px;
   justify-content: center;
 }
 
@@ -259,7 +258,6 @@
   border: solid white 10px;
   border-radius: 20px;
   box-shadow: 1px 1px 1px 1px rgba(192,192,192);
-  width: 500px;
   height: 170px;
   display: flex;
 }
@@ -282,14 +280,12 @@
   object-fit: cover;
   padding-left: 8px;
   position: relative;
-  width: 300px;
 }
 
 .mpopular-container {
   display: flex;
-  flex-direction: column;
+  flex-wrap:wrap;
   gap: 20px;
-  height: 300px;
   justify-items: center;
   margin: auto;
 }
@@ -306,9 +302,9 @@
 .mpopular-background {
   background-color: #F2F2F2;
   border-radius: 20px;
-  height: 660px;
+  height: auto;
   padding:10px;
-  width: 550px;
+  width: 30%;
 }
 
 /* Activities in Marseille*/
@@ -329,7 +325,7 @@
 
 .act-container {
   display: flex;
-  height: 550px;
+  flex-wrap: wrap;
   gap: 55px;
   justify-content: center;
 }
@@ -341,6 +337,7 @@
 .act-container h3 {
   line-height: 22px;
   margin: 1px 10px;
+  flex-wrap: wrap;
 }
 
 .act-header {
@@ -352,7 +349,7 @@
   margin-left: 135px;
 }
 
-.act-back {
+.act-background {
   border-radius: 20px;
   height: auto;
   margin: 0 20px;
@@ -439,13 +436,13 @@
 
 .footer {
   background-color: #F2F2F2;
-  height: 400px;
+  padding: 10px;
+  margin-top: 32px;
 }
 
 .row {
   display: flex;
   justify-content: space-around;
-  margin-right: 430px;
 }
 
 .footer a {
@@ -456,298 +453,474 @@
   color: #0065FC;
 }
 
-/* tablets */
-
-@media only screen and (max-width: 880px) and (min-width: 481px) {
-	
- .top-section,
- .search,
- .info {
-   margin: 0px 50px;
-   width: 95%;
- }
-
- .act-box,
- .oldport-box,
- .pomegues-box,
- .frioul-box,
- .notredame-box,
- .longchamp-box {
-  height: 200px;
- }
-  
- .act-background,
- .acco-background,
- .mpopular-background {
-  border-radius: 0;
-  height: auto;
-  margin: 0 auto;
-  width: 85%;
- }
-  
- .act-container,
- .acco-container,
- .mpopular-container {
-  align-items: center;
-  height: auto;
-  flex-direction: column;
- }
-  
- .act-box,
- .acco-box,
- .mpopular-box {
-  width: 600px;
- }
-
- .logo {
-  width: 50%;
- }
-  
- .nav {
-  align-items: flex-end;
-  gap: 1.6px;
- }
-
- .filters {
-  flex-direction: column;
-  height: auto;
-  margin: 0px 20px;
-  width: 95%;
- }
-
- .info p {
-  margin: 20px 10px;
- } 
-
- .acco-box img {
-  width: 580px;
- }
-
- .acco-header {
-  margin: 10px 16px;
- }
-
- .places {
-  flex-direction: column-reverse;
- }
-
- .showmore {
-  margin: 20px 20px;
- }
-
- .mpopular-header {
-  margin: 10px 20px;
- }
-
- .mpopular-box-text {
-  width: 272px;
- }
-
- .act-container {
-  flex-direction: column;
-  gap: 32px;
- }
-  
- .act-box img {
-  height: 85%;
- }
-
- .act-header-text {
-  margin: 10px 90px;
- }
-  
- .act-box h3 {
-  line-height: 16px;
- }
-  
- .column,
- .column1 {
-  gap: 32px;
-  height: auto;
- }
-  
- .row {
-  flex-direction: column;
- }
-  
- .footer {
-  height: 800px;
-  margin: 40px;
- }
-}
-
 /* mobile phones */
 
-@media only screen and (max-device-width: 480px) and (min-device-width: 320px) {
-	
- .acco-background,
- .act-background,
- .mpopular-background,
- .filters,
- .info,
- .search,
- .header,
- .top-section {
-  height: auto;
-  width: 100%;
- }
-  
- .logo {
-  position: relative;
-  top: 32px;
-  width: 96px;
-  margin: 0px 20px;
- }
+@media only screen and (max-device-width: 480px) {
+   
+  .acco-background,
+  .act-background,
+  .mpopular-background,
+  .filters,
+  .info,
+  .search,
+  .header,
+  .topSection {
+    height: auto;
+  }
+ 
+  .topSection {
+    margin-left: 13%;
+  }
 
- .nav {
-  border-bottom: #F2F2F2 solid 0.4px;
-  height: 60px;
-  justify-content: flex-start;
-  width: 400px;
-  margin: 20px;
- }
-  
- .nav-link:hover {
-  border-top: none;
- }
-  
- .nav-sig {
-  position: relative;
-  bottom: 60px;
-  right: 80px;
-  width: 500px;
-  line-height: 1;
- }
-  
- .nav-act {
-  position: relative;
-  width: 400px;
-  border-bottom: 2px solid grey;
- }
+  .nav {
+   border-bottom: #F2F2F2 solid 0.4px;
+   width: 100%;
+   margin-top: 15%;
+  }
+   
+  .nav-link:hover {
+   border-top: none;
+  }
+   
+  .nav-sig {
+   position: relative;
+   bottom: 60px;
+   right: 80px;
+   width: 500px;
+   line-height: 1;
+  }
+   
+  .nav-act {
+   position: relative;
+   width: 400px;
+   border-bottom: 2px solid grey;
+  }
+ 
+  .nav-acco {
+   position: relative;
+   width: 300px;
+   border-top: none;
+   border-bottom: 2px solid #0065FC;
+  }
+ 
+  .top-section {
+   margin: 15px;
+  }
+   
+  .header {
+   display: flex;
+   flex-direction: row;
+   margin: 0px 100px;
+  }
+ 
+  .search {
+   margin: 15px;
+  }
+   
+  .search-button {
+   color:#F2F2F2;
+   width: 20%;
+  }
+   
+  .fa-map-marker-alt {
+   display: inline;
+   color: black;
+   font-size: 24px;
+   position: relative;
+  }
+ 
+  .filters {
+   display: grid;
+   grid-template-columns: 150px 150px;
+   row-gap: 10px;
+   margin: 0px 20px;
+   width: 150px;
+  }
+   
+  .info {
+   margin: 20px;
+  }
+ 
+  .mpopular-background {
+   height: auto;
+  }
+ 
+  .mpopular-box {
+   width: auto;
+  }
+   
+  .mpopular-box-text {
+   line-height: 16px;
+   width: auto;
+  }
+ 
+  .acco-background {
+   background-color: white;
+  }
+   
+  .acco-box {
+   width: 100%;
+  }
+   
+  .acco-box img {
+   width: 100%;
+  }
+ 
+  .acco-header,
+  .act-header-text,
+  .mpopular h2 {
+   margin: 5px auto;
+  }
+ 
+  .places {
+   flex-direction: column-reverse;
+  }
+ 
+  .act-box {
+   height: 250px;
+   width: 80%;
+  }
 
- .nav-acco {
-  position: relative;
-  width: 300px;
-  border-top: none;
-  border-bottom: 2px solid #0065FC;
- }
-
- .top-section {
-  margin: 15px;
- }
-  
- .header {
-  display: grid;
-  grid-template-rows: 90px 90px;
-  margin: 0px 40px;
- }
-
- .search {
-  margin: 15px;
- }
-  
- .search-button {
-  color:#F2F2F2;
-  width: 20%;
- }
-  
- .fa-map-marker-alt {
-  display: inline;
-  color: black;
-  font-size: 24px;
-  position: relative;
- }
-
- .filters {
-  display: grid;
-  grid-template-columns: 150px 150px;
-  row-gap: 10px;
-  margin: 0px 20px;
-  width: 150px;
- }
-	
- .info {
-  margin: 20px;
-  width: 350px;
- }
-
- .mpopular-background {
-  height: 660px;
- }
-
- .mpopular-box {
-  width: 350px;
- }
-  
- .mpopular-box-text {
-  line-height: 16px;
-  width:200px;
- }
-
- .acco-background {
-  background-color: white;
- }
-  
- .acco-box {
-  width: 350px;
- }
-  
- .acco-box img {
-  width: 330px;
- }
-
- .acco-header {
-  margin: 5px auto;
- }
-
- .places {
-  flex-direction: column-reverse;
- }
-
- .act-box {
-  height: 250px;
-  width: 350px;
- }
-  
- .act-header-text {
-  margin: 10px 20px;
- }
-  
- .act-box h3 {
-  line-height: 16px;
- }
-  
- .act-box img {
-  height: 80%;
- }
-
- .act-container,
- .acco-container {
-  align-items: center;
-  flex-direction: column;
-  gap: 10px;
-  height: auto;
-  width: 100%;
- }
-  
- .column,
- .column1 {
-  gap: 25px;
-  height: auto;
- }
-
- .footer{
-  height: 700px;
-  margin: 25px;
- }
-
- .row {
-  flex-direction: column;
- }
-  
- .footer h3,
- .footer p {
-  width: 300px;
-  margin: 16px;
- } 
+  .showmore p{
+    margin-left: 5px auto;
+  }
+   
+  .act-box h3 {
+   line-height: 16px;
+  }
+   
+  .act-box img {
+   height: 80%;
+  }
+ 
+  .act-container,
+  .mpopular-container,
+  .acco-container {
+   flex-direction: column;
+   gap: 10px;
+   height: auto;
+   width: auto;
+  }
+   
+  .column,
+  .column1 {
+   gap: 25px;
+   height: auto;
+  }
+ 
+  .footer{
+   height: auto;
+   margin: 25px;
+  }
+ 
+  .row {
+   flex-direction: column;
+  }
+   
+  .footer h3,
+  .footer p {
+   width: 300px;
+   margin: 16px;
+  } 
 }
+
+/* tablets */
+
+@media only screen and (max-width: 880px)  {
+	
+  .top-section,
+  .search,
+  .info {
+    margin: 0px 50px;
+    width: 95%;
+  }
+ 
+  .act-box,
+  .oldport-box,
+  .pomegues-box,
+  .frioul-box,
+  .notredame-box,
+  .longchamp-box {
+   height: 200px;
+  }
+   
+  .act-background,
+  .acco-background,
+  .mpopular-background {
+   border-radius: 0;
+   height: auto;
+   margin: 0 auto;
+   width: 85%;
+  }
+   
+  .act-container,
+  .acco-container,
+  .mpopular-container {
+   align-items: center;
+   height: auto;
+   width: auto;
+   flex-direction: column;
+  }
+   
+  .act-box,
+  .acco-box,
+  .mpopular-box {
+   width: 100%;
+  }
+ 
+  .logo {
+   width: 50%;
+  }
+   
+  .nav {
+   align-items: flex-end;
+   gap: 16px;
+  }
+ 
+  .filters {
+   flex-direction: column;
+   height: auto;
+   margin: 0px 20px;
+   width: 95%;
+  }
+ 
+  .info p {
+   margin: 20px 10px;
+  } 
+ 
+  .acco-box img {
+   width: 580px;
+  }
+ 
+  .acco-header {
+   margin: 10px 16px;
+  }
+
+  .acco-background {
+    background-color: white;
+  }
+ 
+  .places {
+   flex-direction: column-reverse;
+  }
+ 
+  .showmore {
+   margin: 20px 20px;
+  }
+ 
+  .mpopular-header {
+   margin: 10px 20px;
+  }
+ 
+  .mpopular-box-text {
+   width: 272px;
+  }
+ 
+  .act-container {
+   flex-direction: column;
+   gap: 32px;
+  }
+   
+  .act-box img {
+   height: 85%;
+  }
+ 
+  .act-header-text {
+   margin: 10px 90px;
+  }
+   
+  .act-box h3 {
+   line-height: 16px;
+  }
+   
+  .column,
+  .column1 {
+   gap: 32px;
+   height: auto;
+  }
+   
+  .row {
+   flex-direction: column;
+  }
+   
+  .footer {
+   height: 800px;
+   margin: 40px;
+  }
+}
+@media all and (max-width: 1439px) {
+
+  .acco-background {
+   background-color: white;
+   height: auto;
+   margin: 0 auto;
+   padding-bottom: 60px;
+   width: 95%;
+  }
+	
+  .act-box,
+  .oldport-box,
+  .pomegues-box,
+  .frioul-box,
+  .calanques-box,
+  .notredame-box,
+  .longchamp-box {
+   height: 320px;
+   width: auto;
+  }
+
+  .act-box img {
+   height: 85%;
+  }
+
+  .act-background {
+   height: auto;
+   margin: 0 auto;
+   width: 95%;
+  }
+	
+  .act-container {
+   align-items: center;
+   flex-direction: column;
+   gap: 15px;
+   height: auto;
+   width: auto;
+  }
+
+  .act-header {
+   height: auto;
+  }
+	
+  .column,
+  .column1 {
+   gap: 32px;
+   margin-bottom: 50px;
+  }
+
+  .places {
+   flex-direction: column-reverse;
+  }
+	
+  .mpopular-background {
+   height: auto;
+   margin: 0 auto;
+   width: 95%;
+  }
+	
+  .mpopular-box {
+   width: auto;
+  }
+
+  .nav{
+   align-items: flex-end;
+   gap: 16px;
+  }
+	
+  .topSection,
+  .top-section,
+  .search,
+  .filters,
+  .info {
+   margin: 30px auto;
+   width: 95%;
+  }
+	
+  .logo {
+   width: 50%;
+  }
+}
+
+@media all and (max-width: 1885px) {
+
+  .acco-background {
+   height: auto;
+   padding: 0 0.8px 50px 0.8px;
+   width: 95%;
+  }
+   
+  .act-background {
+   height: auto;
+   margin: 0 auto;
+   width: 95%;
+  }
+	
+  .act-container {
+   gap: 30px;
+   height: auto;
+   justify-content: center;
+  }
+	
+  .act-box,
+  .oldport-box,
+  .pomegues-box,
+  .frioul-box,
+  .calanques-box,
+  .notredame-box,
+  .longchamp-box {
+   width: auto;
+  }
+
+  .act-box img {
+   height:85%;
+  }
+
+  .frioul-box img,
+  .pomegues-box img,
+  .longchamp-box img,
+  .notredame-box img {
+   height: 80%;
+  }
+
+  body {
+   margin: 0 auto;
+   padding: 0;
+   position: relative;
+  }
+	 
+  .column,
+  .column1 {
+   gap: 50px;
+   height: auto;
+  }
+
+  .places {
+   align-items: center;
+   flex-direction: column-reverse;
+  }
+	
+  .mpopular-background {
+   height: auto;
+   padding: 0 15px 45px 15px;
+   width: 95%;
+  }
+
+  .mpopular-box {
+   width: auto;
+  }
+
+  .mpopular-box-text {
+   object-fit: cover;
+   position: relative;
+   width: auto;
+  }
+
+  .mpopular-container {
+   flex-direction: row;
+   flex-wrap: wrap;
+   height: auto;
+   justify-content: space-evenly;
+  }
+	
+  .mpopular-header {
+   display: inline-flex;
+   height: 60px;
+   width: 100%;
+  }
+
+  .nav,
+  .logo {
+   flex-wrap: nowrap;
+   gap: 8px;
+  }
+}
+
