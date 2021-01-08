@@ -455,7 +455,7 @@
 
 /* mobile phones */
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 480px) and (min-device-width: 320px) {
    
   .acco-background,
   .act-background,
@@ -582,7 +582,7 @@
   }
 
   .showmore p{
-    margin-left: 5px auto;
+    margin-left: 5px;
   }
    
   .act-box h3 {
