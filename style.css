@@ -181,6 +181,7 @@
 .acco-box {
   background-color: white;
   border-radius: 20px;
+  border: solid #F2F2F2 10px;
   box-shadow: 1px 1px 1px 1px rgba(192,192,192);
   width: 300px;
 }
