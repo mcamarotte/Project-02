@@ -595,7 +595,7 @@
    flex-direction: column;
    gap: 10px;
    height: auto;
-   width: auto;
+   width: 80%;
   }
    
   .column,
