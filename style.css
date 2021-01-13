@@ -599,13 +599,13 @@
    gap: 10px;
    height: auto;
    width: 70%;
+   aligh-items: flex-center;
   }
    
   .column,
   .column1 {
    gap: 25px;
    height: auto;
-   aligh-items: center;
   }
  
   .footer{
