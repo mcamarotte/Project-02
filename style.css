@@ -739,6 +739,7 @@
   .column1 {
    gap: 32px;
    height: auto;
+   align-items: center;
   }
    
   .row {
@@ -799,6 +800,7 @@
   .column1 {
    gap: 32px;
    margin-bottom: 50px;
+   align-items: center;
   }
 
   .nav{
