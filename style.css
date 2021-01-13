@@ -555,11 +555,13 @@
   }
    
   .acco-box {
-   width: 100%;
+   width: 70%;
+   margin: 0 240px;
   }
    
   .acco-box img {
    width: 100%;
+   height: fit-content;
   }
  
   .acco-header,
@@ -574,7 +576,7 @@
  
   .act-box {
    height: 250px;
-   width: 80%;
+   width: 70%;
   }
 
   .showmore p{
@@ -587,6 +589,7 @@
    
   .act-box img {
    height: 80%;
+   width: 70%;
   }
  
   .act-container,
@@ -595,7 +598,7 @@
    flex-direction: column;
    gap: 10px;
    height: auto;
-   width: 80%;
+   width: 70%;
   }
    
   .column,
@@ -837,7 +840,8 @@
   .calanques-box,
   .notredame-box,
   .longchamp-box {
-   width: auto;
+   width: 70%;
+   aligh-content: center;
   }
 	
   .frioul-box img,
@@ -913,13 +917,14 @@
   }
 	
   .act-box img {
-   height:85%;
+   height: 100%;
   }
 	 
   .column,
   .column1 {
    gap: 50px;
    height: auto;
+   align-item: center;
   }
 }
 
