@@ -526,8 +526,8 @@
   }
  
   .filters {
-   display: grid;
-   grid-template-columns: 150px 150px;
+   display: flex;
+   flex-flow: row wrap;
    row-gap: 10px;
    margin: 0px 20px;
    width: 150px;
@@ -759,7 +759,7 @@
   .filters,
   .info {
    margin: 30px auto;
-   width: 95%;
+   width: 90%;
   }
 	
   .acco-background {
